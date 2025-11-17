@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Cerita - Ruang Aman</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🌿 Ruang Aman</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Beranda</a></li>
+                <li><a href="/about.html" class="nav-link">Tentang</a></li>
+                <li><a href="/report.html" class="nav-link active">Kirim Cerita</a></li>
+                <li><a href="/contact.html" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Report Form Section -->
+    <section class="page-content">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2>Kirim Pengaduan Anda</h2>
+                <p class="form-intro">
+                    Cerita Anda penting. Bagikan pengalaman Anda dengan aman dan anonim. 
+                    Kami berjanji untuk mendengarkan dan mengambil tindakan yang tepat.
+                </p>
+
+                <form id="reportForm" class="report-form" enctype="multipart/form-data">
+                    <!-- Name Field -->
+                    <div class="form-group">
+                        <label for="name">Nama (Opsional)</label>
+                        <input type="text" id="name" name="name" placeholder="Kosongkan jika ingin anonim" class="form-input">
+                        <small>Jika kosong, pengaduan akan dikirim sebagai 'Anonim'</small>
+                    </div>
+
+                    <!-- Anonymous Checkbox -->
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="anonymous" name="anonymous" checked>
+                            <span>Kirim secara anonim</span>
+                        </label>
+                    </div>
+
+                    <!-- Category -->
+                    <div class="form-group">
+                        <label for="category">Kategori Masalah <span class="required">*</span></label>
+                        <select id="category" name="category" class="form-input" required>
+                            <option value="">-- Pilih Kategori --</option>
+                            <option value="pelecehan-seksual">Pelecehan Seksual</option>
+                            <option value="bullying">Bullying & Cyberbullying</option>
+                            <option value="kekerasan-fisik">Kekerasan Fisik</option>
+                            <option value="pelecehan-emosional">Pelecehan Emosional</option>
+                            <option value="manipulasi-grooming">Manipulasi & Grooming</option>
+                            <option value="hubungan-toxic">Hubungan Toxic</option>
+                            <option value="diskriminasi">Diskriminasi & Prejudice</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <!-- Story/Detail -->
+                    <div class="form-group">
+                        <label for="story">Cerita & Detail Lengkap <span class="required">*</span></label>
+                        <textarea id="story" name="story" class="form-textarea" rows="8" 
+                                  placeholder="Bagikan cerita Anda secara detail. Kami mendengarkan dengan empati dan kerahasiaan penuh." 
+                                  required></textarea>
+                        <small>Tidak ada batasan panjang. Cerita Anda penting bagi kami.</small>
+                    </div>
+
+                    <!-- Email (Optional) -->
+                    <div class="form-group">
+                        <label for="email">Email (Opsional)</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" class="form-input">
+                        <small>Berikan email jika Anda ingin kami menghubungi Anda kembali (tidak wajib)</small>
+                    </div>
+
+                    <!-- File Upload -->
+                    <div class="form-group">
+                        <label for="evidence">Upload Bukti (Opsional)</label>
+                        <input type="file" id="evidence" name="evidence" class="form-input" accept="image/*,.pdf,.doc,.docx">
+                        <small>Ukuran file maksimal 10MB. Format: gambar, PDF, atau dokumen.</small>
+                    </div>
+
+                    <!-- Privacy Notice -->
+                    <div class="privacy-notice">
+                        <p>
+                            <strong>🔒 Komitmen Privasi Kami:</strong> 
+                            Data Anda dienkripsi dan dijaga kerahasiaannya. Kami tidak akan membagikan informasi Anda kepada pihak ketiga 
+                            tanpa persetujuan Anda. Informasi yang Anda bagikan hanya digunakan untuk membantu dan mendukung Anda.
+                        </p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="cta-btn cta-btn-large" id="submitBtn">
+                        Kirim Cerita
+                    </button>
+                </form>
+
+                <!-- Error Message -->
+                <div id="errorMsg" class="alert alert-error" style="display:none;"></div>
+
+                <!-- Loading State -->
+                <div id="loadingMsg" class="alert alert-info" style="display:none;">
+                    Mengirim cerita Anda... Mohon tunggu.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ruang Aman. Semua hak dilindungi. Privasi Anda adalah prioritas kami.</p>
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

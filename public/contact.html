@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Ruang Aman</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🌿 Ruang Aman</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Beranda</a></li>
+                <li><a href="/about.html" class="nav-link">Tentang</a></li>
+                <li><a href="/report.html" class="nav-link">Kirim Cerita</a></li>
+                <li><a href="/contact.html" class="nav-link active">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="page-content">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <p>
+                        Jika Anda memiliki pertanyaan, umpan balik, atau kebutuhan khusus, 
+                        jangan ragu untuk menghubungi kami.
+                    </p>
+
+                    <div class="contact-box">
+                        <h4>📧 Email</h4>
+                        <p><a href="mailto:info@ruangaman.local">info@ruangaman.local</a></p>
+                        <small>Waktu respons: 1-3 hari kerja</small>
+                    </div>
+
+                    <div class="contact-box">
+                        <h4>🌐 Media Sosial</h4>
+                        <p>
+                            <a href="#" class="social-link">Instagram</a> | 
+                            <a href="#" class="social-link">Twitter</a> | 
+                            <a href="#" class="social-link">Facebook</a>
+                        </p>
+                        <small>Follow kami untuk update dan tips kesejahteraan</small>
+                    </div>
+
+                    <div class="contact-box">
+                        <h4>🆘 Layanan Darurat</h4>
+                        <p><strong>Telepon Keselamatan Jiwa: 119</strong></p>
+                        <small>Tersedia 24/7 untuk situasi darurat</small>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Nama <span class="required">*</span></label>
+                            <input type="text" id="contactName" name="contactName" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email <span class="required">*</span></label>
+                            <input type="email" id="contactEmail" name="contactEmail" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subjek <span class="required">*</span></label>
+                            <input type="text" id="contactSubject" name="contactSubject" class="form-input" placeholder="Pertanyaan atau umpan balik" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Pesan <span class="required">*</span></label>
+                            <textarea id="contactMessage" name="contactMessage" class="form-textarea" rows="6" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-btn">Kirim Pesan</button>
+                        <div id="contactSuccess" class="alert alert-success" style="display:none; margin-top:1rem;">
+                            Terima kasih! Pesan Anda telah terkirim. Kami akan merespons segera.
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h3>Pertanyaan Umum (FAQ)</h3>
+                
+                <div class="faq-item">
+                    <h4>Apakah cerita saya akan tetap rahasia?</h4>
+                    <p>Ya, absolut. Kami menjaga kerahasiaan semua laporan. Data Anda dienkripsi dan hanya diakses oleh tim yang berwenang.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Bagaimana jika saya ingin membatalkan laporan?</h4>
+                    <p>Hubungi kami melalui email dengan ID pengaduan Anda (jika ada). Kami akan membantu Anda sesuai dengan kebijakan kami.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Berapa lama waktu respons dari tim Anda?</h4>
+                    <p>Kami berkomitmen merespons dalam 1-3 hari kerja (jika Anda memberikan email kontak).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Apakah saya bisa mengirim bukti atau dokumen tambahan?</h4>
+                    <p>Ya, Anda dapat mengunggah file maksimal 10MB dalam formulir pengaduan. Kami juga terbuka untuk menerima dokumen tambahan via email.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Siapa yang membaca laporan saya?</h4>
+                    <p>Laporan Anda dibaca oleh tim profesional kami yang terlatih dalam konseling, advokasi, dan kesejahteraan mental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ruang Aman. Semua hak dilindungi. Privasi Anda adalah prioritas kami.</p>
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
