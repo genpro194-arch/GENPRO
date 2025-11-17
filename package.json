@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Ruang Aman — platform pengaduan pergaulan menyimpang (anonymous-friendly)",
   "main": "server.js",
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
